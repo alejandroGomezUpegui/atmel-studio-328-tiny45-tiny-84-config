@@ -1,0 +1,15 @@
+
+*/
+usbtiny Atmega 328p
+avrdude.exe
+-c usbtiny -B 5 -p m328p -U flash:w:$(TargetDir)$(TargetName).hex:i -U eeprom:w:$(TargetDir)$(TargetName).eep:i
+
+usbtiny Attiny 45
+avrdude.exe
+-c usbtiny -B 5 -p t45 -U flash:w:$(TargetDir)$(TargetName).hex:i -U eeprom:w:$(TargetDir)$(TargetName).eep:i
+
+usb Attiny84
+avrdude.exe
+-c usbtiny -B 5 -p t84 -U flash:w:$(TargetDir)$(TargetName).hex:i -U eeprom:w:$(TargetDir)$(TargetName).eep:i
+
+/*
